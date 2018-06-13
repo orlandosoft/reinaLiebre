@@ -1,0 +1,81 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px; }
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+a {
+  text-decoration: none; }
+  a:hover, a:active, a:focus {
+    text-decoration: none; }
+
+@font-face {
+  font-family: Skranji-Bold;
+  src: url(../../fonts/Skranji-Bold.ttf); }
+@font-face {
+  font-family: Skranji-Regular;
+  src: url(../../fonts/Skranji-Regular.ttf); }
+@font-face {
+  font-family: cartoon;
+  src: url(../../fonts/Good-Morning.ttf); }
+.welcome-section {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  background-color: #ece2d0; }
+  .welcome-section .welcome-wrapper {
+    margin: auto; }
+    .welcome-section .welcome-wrapper .title-1 {
+      color: #fe5f55;
+      font-family: cartoon;
+      padding: 10px;
+      display: inline-block;
+      font-size: 4.5em; }
+    .welcome-section .welcome-wrapper .subtitle-1 {
+      display: inline-block;
+      font-family: Skranji-Regular;
+      font-size: 2.5em;
+      color: #44a1a0; }
+
+.first-section-calculator {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  background-color: #ece2d0; }
+  .first-section-calculator .welcome-wrapper {
+    margin: auto; }
+    .first-section-calculator .welcome-wrapper .title-1 {
+      color: #fe5f55;
+      font-family: cartoon;
+      padding: 10px;
+      display: inline-block;
+      font-size: 4.5em; }
+    .first-section-calculator .welcome-wrapper .subtitle-1 {
+      display: inline-block;
+      font-family: Skranji-Regular;
+      font-size: 2.5em;
+      color: #44a1a0; }
+    .first-section-calculator .welcome-wrapper .selectionBeer {
+      margin: 10px; }
+    .first-section-calculator .welcome-wrapper p {
+      font-family: Skranji-Regular;
+      font-size: 2em; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Reina Liebre</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/stylesheets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.jqtimeline.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery.jqtimeline.js"></script>
+
+  </head>
+  <body>
+
+    <section class="first-section-calculator">
+      <div class="welcome-wrapper">
+        <p class="title-1">CALCULADORA</p>
+        <br>
+        <p>Gravedad inicial</p>
+        <input type="number" id="og" class="inputIn">
+        <p>Gravedad final</p>
+        <input type="number" id="fg" class="inputIn">
+        <br>
+        <select class="selectionBeer">
+          <option value="IPA">IPA</option>
+          <option>ABA</option>
+          <option>PORTER</option>
+          <option>MILSTOUT</option>
+        </select>
+        <br>
+
+        <button onclick="calculator()" class="buttonResult">Dale con tokio</button>
+        <div id="result"></div>
+      </div>
+    </section>
+    <div id="my<a href="https://www.jqueryscript.net/tags.php?/Timeline/">Timeline</a>"></div>
+    <script>
+    function calculator() {
+      var og = document.getElementById("og").value;
+      var fg = document.getElementById("fg").value;
+      if (og != "" && fg != "" ) {
+        var alcoholDensity = 0.79;
+        var alcoholmass = (og-fg)*1.05;
+        var alcoholpercentage = (alcoholmass/fg)*100;
+        document.getElementById("result").innerHTML = alcoholpercentage/alcoholDensity;
+      }else {
+        document.getElementById("result").innerHTML = "Campos vacíos Conejin "
+      }
+    }
+    </script>
+
+    <script type="text/javascript">
+	var ev = [{
+		id : 1,
+		name : "Joined Faecbook",
+		on : new Date(2011,2,15)
+	},{
+		id : 11,
+		name : "Up<a href="https://www.jqueryscript.net/time-clock/">date</a>d my first status message",
+		on : new Date(2011,2,17)
+	},{
+		id : 2,
+		name : "Joined Twitter",
+		on : new Date(2011,5,30)
+	},{
+		id : 9,
+		name : "Created a new blogger account",
+		on : new Date(2011,7,5)
+	},{
+		id : 3,
+		name : "Trip to Australia",
+		on : new Date(2012,5,5)
+	},{
+		id : 4,
+		name : "Trip to New Zealand",
+		on : new Date(2012,5,30)
+	},{
+		id : 5,
+		name : "Awesome new year",
+		on : new Date(2013,0,1)
+	},{
+		id : 6,
+		name : "Will go to Moon",
+		on : new Date(2013,6,10)
+	},{
+		id : 7,
+		name : "Will go to Mars",
+		on : new Date(2014,6,10)
+	},{
+		id : 8,
+		name : "No idea about this date",
+		on : new Date(2015,6,10)
+	}]
+		var tl = $('#myTimeline').jqtimeline({
+		events : ev,
+		numYears:4,
+		startYear:2011,
+		click:function(e,event){
+			alert(event.name);
+		}
+	});
+</script>
+
+
+
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
