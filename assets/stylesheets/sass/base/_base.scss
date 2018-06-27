@@ -17,8 +17,16 @@ html {
 
 a {
   text-decoration: none;
+  color: $white;
 
   @include on-event {
     text-decoration: none;
+    color: $white;
+  }
+}
+
+li {
+  @include on-event{
+    border-bottom: solid 1px;
   }
 }

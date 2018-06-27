@@ -14,68 +14,166 @@ html {
   box-sizing: inherit; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: white; }
   a:hover, a:active, a:focus {
-    text-decoration: none; }
+    text-decoration: none;
+    color: white; }
+
+li:hover, li:active, li:focus {
+  border-bottom: solid 1px; }
 
 @font-face {
-  font-family: Skranji-Bold;
-  src: url(../../fonts/Skranji-Bold.ttf); }
+  font-family: Raleway-Light;
+  src: url(../../fonts/Raleway-Light.ttf); }
 @font-face {
-  font-family: Skranji-Regular;
-  src: url(../../fonts/Skranji-Regular.ttf); }
+  font-family: Raleway-Regular;
+  src: url(../../fonts/Raleway-Regular.ttf); }
 @font-face {
-  font-family: cartoon;
-  src: url(../../fonts/Good-Morning.ttf); }
-.welcome-section {
-  text-align: center;
-  margin: auto;
+  font-family: Raleway-Medium;
+  src: url(../../fonts/Raleway-Medium.ttf); }
+@font-face {
+  font-family: Raleway-Bold;
+  src: url(../../fonts/Raleway-Bold.ttf); }
+.navbar {
+  background-color: #878787;
+  color: white;
+  font-family: Raleway-Regular;
+  height: 100px;
+  letter-spacing: 2px;
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  padding: 1em;
-  background-color: #ece2d0; }
-  .welcome-section .welcome-wrapper {
-    margin: auto; }
-    .welcome-section .welcome-wrapper .title-1 {
-      color: #fe5f55;
-      font-family: cartoon;
-      padding: 10px;
+  z-index: 100; }
+  .navbar ul {
+    margin: 47px;
+    text-align: center;
+    width: 100%; }
+    .navbar ul .text-left {
       display: inline-block;
-      font-size: 4.5em; }
-    .welcome-section .welcome-wrapper .subtitle-1 {
+      font-size: 2em;
+      font-family: Raleway-Medium;
+      position: relative;
+      margin-right: 10%;
+      bottom: -10px; }
+    .navbar ul li {
       display: inline-block;
-      font-family: Skranji-Regular;
-      font-size: 2.5em;
-      color: #44a1a0; }
+      text-decoration: none;
+      font-size: 1.3em;
+      margin-right: 41px; }
 
-.first-section-calculator {
-  text-align: center;
-  margin: auto;
+.main-section {
+  background-color: #878787;
+  padding-top: 150px;
   width: 100%;
+  height: 100vh; }
+  .main-section .wrapper-logo {
+    text-align: center; }
+    .main-section .wrapper-logo p {
+      color: white;
+      font-family: Caslon;
+      font-size: 2.43em;
+      text-align: center;
+      max-width: 336px;
+      margin: 62px auto;
+      opacity: .8; }
+    .main-section .wrapper-logo .main-logo {
+      max-width: 408px;
+      max-height: 202px; }
+
+.craft-beer-section {
+  background-color: #fafafa;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  padding: 1em;
-  background-color: #ece2d0; }
-  .first-section-calculator .welcome-wrapper {
-    margin: auto; }
-    .first-section-calculator .welcome-wrapper .title-1 {
-      color: #fe5f55;
-      font-family: cartoon;
-      padding: 10px;
+  width: 100%; }
+  .craft-beer-section .wrapper-text-top {
+    text-align: center;
+    margin: 83px;
+    margin-bottom: 0 !important;
+    line-height: 1.1; }
+    .craft-beer-section .wrapper-text-top .title-top {
+      color: #3b3d40;
+      font-size: 5.3em;
+      font-family: Raleway-Bold; }
+    .craft-beer-section .wrapper-text-top .subtitle-top {
+      color: #3b3d40;
+      font-size: 3.8em;
+      font-family: Raleway-Bold; }
+    .craft-beer-section .wrapper-text-top .paragraph-top {
+      color: #666666;
+      font-size: 2.7em;
+      font-family: Caslon; }
+  .craft-beer-section .wrapper-logo-text .logo-left {
+    height: 444px;
+    margin-left: 10%; }
+  .craft-beer-section .wrapper-logo-text .align-paragraph {
+    color: gray;
+    display: inline-block;
+    font-size: 1.76em;
+    font-family: Caslon;
+    text-align: left;
+    max-width: 384px;
+    margin-left: -4%;
+    vertical-align: middle; }
+
+.team-section {
+  height: 100vh;
+  width: 100%; }
+  .team-section .wrapper-text-top {
+    text-align: center;
+    line-height: 1.1; }
+    .team-section .wrapper-text-top .title-top {
+      color: black;
       display: inline-block;
-      font-size: 4.5em; }
-    .first-section-calculator .welcome-wrapper .subtitle-1 {
+      font-size: 5em;
+      font-family: Raleway-Bold;
+      max-width: 447px;
+      margin-top: 73px; }
+    .team-section .wrapper-text-top .subtile-top {
+      color: #666c70;
       display: inline-block;
-      font-family: Skranji-Regular;
-      font-size: 2.5em;
-      color: #44a1a0; }
-    .first-section-calculator .welcome-wrapper .selectionBeer {
-      margin: 10px; }
-    .first-section-calculator .welcome-wrapper p {
-      font-family: Skranji-Regular;
-      font-size: 2em; }
+      font-size: 2.38em;
+      font-family: Caslon;
+      max-width: 390px; }
+
+.testimonials-section {
+  background-color: black;
+  height: 80vh;
+  padding-top: 112px;
+  text-align: center;
+  width: 100%; }
+  .testimonials-section .title-top {
+    color: white;
+    font-size: 1.5em; }
+
+.products-section {
+  text-align: center; }
+  .products-section .img-beer {
+    max-height: 419px; }
+  .products-section .wrapper-text-button {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left; }
+    .products-section .wrapper-text-button .title-top {
+      color: #3b3d40;
+      font-family: Raleway-Bold;
+      font-size: 5em;
+      line-height: 1;
+      max-width: 426px; }
+    .products-section .wrapper-text-button .paragraph {
+      color: #666c70;
+      font-family: Caslon;
+      font-size: 1.5em;
+      max-width: 441px; }
+    .products-section .wrapper-text-button .button {
+      background-color: #2c71f2;
+      border-radius: 50px;
+      color: white;
+      font-size: 1.5em;
+      height: 45px;
+      margin-top: 40px;
+      width: 190px; }
+      .products-section .wrapper-text-button .button :hover {
+        background-color: white;
+        cursor: hand; }
 
 /*# sourceMappingURL=main.css.map */
