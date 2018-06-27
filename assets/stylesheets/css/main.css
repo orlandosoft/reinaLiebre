@@ -172,8 +172,52 @@ li:hover, li:active, li:focus {
       height: 45px;
       margin-top: 40px;
       width: 190px; }
-      .products-section .wrapper-text-button .button :hover {
-        background-color: white;
-        cursor: hand; }
+      .products-section .wrapper-text-button .button:hover {
+        background-color: #878787;
+        cursor: pointer; }
+
+.video-section {
+  background-color: #3b3d40;
+  color: white;
+  height: 100vh;
+  text-align: center;
+  padding-top: 122px; }
+  .video-section .title-top {
+    font-family: Raleway-Bold;
+    font-size: 5em; }
+  .video-section .subtile-bottom {
+    font-family: Caslon;
+    font-size: 2em; }
+
+.social-network-section {
+  padding: 76px; }
+  .social-network-section .wrapper-top {
+    text-align: center;
+    line-height: 1; }
+    .social-network-section .wrapper-top .social-network-logo {
+      max-height: 279px; }
+    .social-network-section .wrapper-top .title-top {
+      color: #3b3d40;
+      font-size: 5em;
+      font-family: Raleway-Bold; }
+    .social-network-section .wrapper-top .subtitle-top {
+      color: #878787;
+      font-size: 2.3em;
+      font-family: Caslon; }
+    .social-network-section .wrapper-top .social-wrapper {
+      display: inline-block;
+      margin: 40px; }
+      .social-network-section .wrapper-top .social-wrapper.twitter-wrapper {
+        margin-right: 0px !important; }
+      .social-network-section .wrapper-top .social-wrapper .social-icon {
+        max-height: 56px; }
+      .social-network-section .wrapper-top .social-wrapper .title-bottom {
+        margin: 15px;
+        font-family: Raleway-Medium;
+        font-size: 1.3em; }
+      .social-network-section .wrapper-top .social-wrapper .subtitle-bottom {
+        font-size: 1.4em;
+        font-family: Caslon;
+        color: #878787; }
 
 /*# sourceMappingURL=main.css.map */

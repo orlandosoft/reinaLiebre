@@ -162,6 +162,7 @@
       display: inline-block;
       vertical-align: middle;
       text-align: left;
+
         .title-top {
           color: $black;
           font-family: Raleway-Bold;
@@ -186,10 +187,78 @@
           margin-top: 40px;
           width: 190px;
 
-          :hover{
-            background-color: $white;
-            cursor: hand;
+          &:hover{
+            background-color: $gray-ligth;
+            cursor:pointer;
           }
         }
     }
-}
+  }
+
+  .video-section{
+    background-color: $black;
+    color: $white;
+    height: 100vh;
+    text-align: center;
+    padding-top: 122px;
+
+      .title-top{
+        font-family: Raleway-Bold;
+        font-size: 5em;
+      }
+
+      .subtile-bottom {
+        font-family: Caslon;
+        font-size: 2em;
+      }
+  }
+
+  .social-network-section {
+    padding: 76px;
+
+    .wrapper-top{
+      text-align: center;
+      line-height: 1;
+
+        .social-network-logo{
+          max-height: 279px;
+        }
+
+        .title-top{
+          color: $black;
+          font-size: 5em;
+          font-family: Raleway-Bold;
+        }
+
+        .subtitle-top{
+          color:$gray-ligth;
+          font-size: 2.3em;
+          font-family:Caslon;
+        }
+        .social-wrapper{
+          display: inline-block;
+          margin: 40px;
+
+            &.twitter-wrapper{
+              margin-right: 0px !important;
+            }
+
+          .social-icon{
+            max-height: 56px;
+          }
+
+          .title-bottom{
+            margin: 15px;
+            font-family: Raleway-Medium;
+            font-size: 1.3em;
+          }
+
+          .subtitle-bottom{
+            font-size: 1.4em;
+            font-family: Caslon;
+            color: $gray-ligth;
+          }
+
+        }
+    }
+  }
