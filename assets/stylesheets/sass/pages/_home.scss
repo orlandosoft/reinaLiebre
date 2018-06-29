@@ -141,7 +141,7 @@
 
 .testimonials-section {
   background-color: $black-background;
-  height: 80vh;
+  height: 90vh;
   padding-top: 112px;
   text-align: center;
   width: 100%;
@@ -149,6 +149,37 @@
     .title-top{
       color: $white;
       font-size: 1.5em;
+    }
+
+    .commentary-wrapper {
+      color: $white;
+      display: inline-block;
+      max-width: 402px;
+      text-align: left;
+      margin: 30px;
+      vertical-align: top;
+
+        .commentary {
+          font-size: 2.8em;
+          font-family: Caslon;
+        }
+
+        .line {
+          border: solid .5px $gray-ligth;
+        }
+
+        .author {
+          font-family: Raleway-Bold;
+          font-size: 1em;
+        }
+
+        .position {
+          color: $white-pearl;
+          font-family: Caslon;
+          font-size: 1em;
+        }
+
+
     }
 }
 .products-section {
@@ -196,7 +227,7 @@
   }
 
   .video-section{
-    background-color: $black;
+    background-color: $gray-opacity;
     color: $white;
     height: 100vh;
     text-align: center;
@@ -237,7 +268,7 @@
         }
         .social-wrapper{
           display: inline-block;
-          margin: 40px;
+          margin: 35px;
 
             &.twitter-wrapper{
               margin-right: 0px !important;
@@ -262,3 +293,110 @@
         }
     }
   }
+
+  .contact-us-section{
+    height: 70vh;
+    background-color: $gray-opacity;
+    display: flex;
+    align-items: center;
+
+      .contact-wrapper{
+        color: $white;
+        text-align: center;
+        margin:auto;
+
+          .title-top{
+            font-size: 5em;
+            font-family: Raleway-Bold;
+          }
+
+          .paragraph-top{
+            font-size: 2.3em;
+            font-family: Caslon;
+            max-width: 445px;
+            margin: auto;
+          }
+
+          .contact-form {
+            margin-top: 30px;
+          }
+
+          .email-input{
+            background-color: $gray-ligth;
+            border: none;
+            border-radius: 8px;
+            color: $white;
+            font-family: Raleway-Medium;
+            font-size: 1.5em;
+            height: 45px;
+            min-width: 400px;
+            padding-left: 10px;
+            color: $white;
+
+              &::placeholder{
+                color: $white;
+                font-size: 1em;
+                font-family: Raleway-Medium !important;
+              }
+          }
+
+          .email-button {
+            background-color: $button;
+            border-radius: 50px;
+            border: none;
+            color: $white;
+            font-family: Raleway-Medium;
+            height: 45px;
+            font-size: 1.5em;
+            margin: 20px;
+            width: 158px;
+
+              &:hover{
+                background-color: $gray-ligth;
+                cursor: pointer;
+              }
+          }
+
+        }
+    }
+
+    .footer-home{
+      background-color: $black;
+      color: $white;
+      height: 20vh;
+      display: flex;
+      align-items: center;
+
+        .footer-wrapper{
+          width: 100%;
+          display: flex;
+          align-items: center;
+
+            .logo-text{
+              display: inline-block;
+              font-family: Raleway-Medium;
+              font-size: 1.6em;
+              letter-spacing: 1.5px;
+              margin: 0 10%;
+              width: 15%;
+            }
+
+            .address{
+              display: inline-block;
+              font-family: Caslon;
+              font-size: 1.2em;
+              letter-spacing: 1.5px;
+              color: $gray-ligth;
+              width: 30%;
+
+
+            }
+
+            .copyright{
+              color: $gray-ligth;
+              display: inline-block;
+              width: 20%;
+            }
+
+      }
+    }
