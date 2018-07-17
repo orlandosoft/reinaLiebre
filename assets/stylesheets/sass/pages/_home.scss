@@ -1,29 +1,27 @@
 .navbar {
-  background-color: $gray-ligth;
+  background-color: $gray-ligth !important;
   color: $white;
   font-family: Raleway-Regular;
   height: 100px;
   letter-spacing: 2px;
   position: fixed;
   top: 0;
+  margin: auto;
   width: 100%;
   z-index: 100;
 
+  .text-left {
+    display: inline-block;
+    font-size: 2em;
+    font-family: Raleway-Medium;
+    position: relative;
+    bottom: -10px;
+    margin: auto;
+  }
 
   ul {
-    margin: 47px;
     text-align: center;
     width: 100%;
-
-    .text-left {
-      display: inline-block;
-      font-size: 2em;
-      font-family: Raleway-Medium;
-      position: relative;
-      margin-right: 10%;
-      bottom: -10px;
-
-    }
 
     li {
       display: inline-block;
@@ -52,6 +50,7 @@
         max-width: 336px;
         margin:62px auto;
         opacity: .8;
+        line-height: 1.26;
       }
 
       .main-logo {
@@ -64,12 +63,12 @@
 
 .craft-beer-section {
   background-color: $white-pearl;
-  height: 100vh;
+  height: 100%;
+  padding: 4%;
   width: 100%;
 
     .wrapper-text-top {
       text-align: center;
-      margin: 83px;
       margin-bottom: 0 !important;
       line-height: 1.1;
 
@@ -89,31 +88,33 @@
           color: $gray-opacity;
           font-size: 2.7em;
           font-family: Caslon;
+          line-height: 1.26;
         }
     }
 
     .wrapper-logo-text {
+      text-align: center;
+      margin: 20px;
 
-      .logo-left{
-        height: 444px;
-        margin-left: 10%;
-      }
+        .logo-left{
+          height: 444px;
+        }
 
-      .align-paragraph {
-        color: gray;
-        display: inline-block;
-        font-size: 1.76em;
-        font-family: Caslon;
-        text-align: left;
-        max-width: 384px;
-        margin-left: -4%;
-        vertical-align: middle;
-      }
+        .align-paragraph {
+          color: gray;
+          display: inline-block;
+          font-size: 1.76em;
+          font-family: Caslon;
+          text-align: left;
+          max-width: 384px;
+          vertical-align: middle;
+        }
     }
 }
 .team-section {
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  padding: 4%;
 
     .wrapper-text-top {
       text-align: center;
@@ -125,7 +126,6 @@
           font-size: 5em;
           font-family: Raleway-Bold;
           max-width: 447px;
-          margin-top: 73px;
         }
 
         .subtile-top{
@@ -137,11 +137,64 @@
 
         }
     }
+    .carousel-items-team{
+      text-align: center;
+
+      .team-wrapper-multi{
+        display: inline-block;
+        text-align: center;
+        margin: 30px;
+
+        .team-wrapper{
+
+            &.margin-top {
+              line-height: .9;
+              margin: 30px auto;
+            }
+            .photo-team {
+              max-height: 158px;
+            }
+            .paragraph {
+              color: $gray-opacity;
+              font-size: 1.5em;
+              font-family: Caslon;
+              max-width: 230px;
+              margin: auto;
+            }
+
+            .name {
+              font-size: 1.3em;
+              font-family: Raleway-Medium;
+            }
+
+            .position {
+              color: $gray-opacity;
+              font-size: 1.4em;
+              font-family: Caslon;
+              line-height: 1;
+            }
+        }
+      }
+    }
+
+    .carousel-control-next-icon:after {
+      content: '>';
+      font-size: 40px;
+      color: $gray-ligth;
+      max-width: 13px;
+    }
+
+    .carousel-control-prev-icon:after {
+      content: '<';
+      font-size: 40px;
+      color: $gray-ligth;
+      max-width: 13px;
+    }
 }
 
 .testimonials-section {
   background-color: $black-background;
-  height: 90vh;
+  padding: 4%;
   padding-top: 112px;
   text-align: center;
   width: 100%;
@@ -181,18 +234,22 @@
 
 
     }
+
 }
 .products-section {
   text-align: center;
+  padding: 4%;
 
     .img-beer{
       max-height: 419px;
+      margin: 20px;
     }
 
     .wrapper-text-button {
       display: inline-block;
       vertical-align: middle;
       text-align: left;
+      margin: 20px;
 
         .title-top {
           color: $black;
@@ -229,9 +286,10 @@
   .video-section{
     background-color: $gray-opacity;
     color: $white;
-    height: 100vh;
+    height: 100%;
     text-align: center;
     padding-top: 122px;
+    padding: 4%;
 
       .title-top{
         font-family: Raleway-Bold;
@@ -246,6 +304,7 @@
 
   .social-network-section {
     padding: 76px;
+    padding: 4%;
 
     .wrapper-top{
       text-align: center;
@@ -271,7 +330,7 @@
           margin: 35px;
 
             &.twitter-wrapper{
-              margin-right: 0px !important;
+
             }
 
           .social-icon{
@@ -295,10 +354,10 @@
   }
 
   .contact-us-section{
-    height: 70vh;
+    align-items: center;
     background-color: $gray-opacity;
     display: flex;
-    align-items: center;
+    padding: 4%;
 
       .contact-wrapper{
         color: $white;
@@ -361,11 +420,11 @@
     }
 
     .footer-home{
-      background-color: $black;
-      color: $white;
-      height: 20vh;
-      display: flex;
       align-items: center;
+      background-color: $black;
+      display: flex;
+      color: $white;
+      padding: 4%;
 
         .footer-wrapper{
           width: 100%;
